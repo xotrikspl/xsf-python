@@ -1,0 +1,31 @@
+{
+	"server": [
+		{
+			"xsf": "/usr/home/xsf",
+			"xsf_auth": "/usr/home/xsf/auth/auth",
+			"xsf_db": "/usr/home/xsf/database/db",
+			"xsf_channel": "/usr/home/xsf/channel",
+			"xsf_special_channel": "/usr/home/xsf/channel/ch99",
+			"files_to_delete": [
+				"*.txt", "*.log", "log", "sysser",
+				"syslog", "stdout", "PTS", "mob_count"
+			],
+			"ignore_paths": [
+				"/usr/home/xsf/database",
+				"/usr/home/xsf/share/data",
+				"/usr/home/xsf/share/locale"
+			]
+		}
+	],
+
+	"backup": [
+		{
+			"backup_path": "/_temp/backup",
+			"backup_sql_path": "/_temp/sql",
+			"files": [
+				"/usr/home/xsf",
+				"/usr/src/Server"
+			]
+		}
+	]
+}
